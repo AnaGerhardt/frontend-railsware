@@ -15,10 +15,10 @@ const LoginPage = () => {
   return (
     <IntroLayout title="Welcome Back!" image={LoginImage}>
       <>
-        <InputEmail type="email" autoFocus />
+        <InputEmail type="email" placeholder="example@email.com" autoFocus />
         <WrapperSideText>
-          <InputPassword type="password" />
-          <span>Forgot Password?</span>
+          <InputPassword type="password" placeholder="password" />
+          <span id="blue">Forgot Password?</span>
         </WrapperSideText>
         <DefaultButton>Log in</DefaultButton>
         <BottomText>Or connect with social</BottomText>

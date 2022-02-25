@@ -11,7 +11,7 @@ const ForgotPasswordPage = () => {
   return (
     <IntroLayout title="Forgot Password" image={ForgotPasswordImage}>
       <>
-        <InputEmail type="email" autoFocus />
+        <InputEmail type="email" placeholder="example@email.com" autoFocus />
         <DefaultButton>Reset</DefaultButton>
         <BottomText style={{ marginTop: "15vh" }}>
           Already have an account?

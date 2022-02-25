@@ -3,7 +3,7 @@ import UserIcon from "../icons/User.svg";
 import LockIcon from "../icons/Lock.svg";
 
 export const theme = {
-  defaultTextColor: "#fff",
+  defaultButtonTextColor: "#fff",
   defaultAppColor: "#1a4f8b",
   lightGreyColor: "lightgrey",
   mediumGreyColor: "#aeaeae",
@@ -40,6 +40,9 @@ input {
   :hover, :focus {
     color: ${theme.defaultAppColor};
     border: 2px solid ${theme.defaultAppColor};
+    ::placeholder {
+      color: ${theme.defaultAppColor};
+    }
   }
 }
 `;
@@ -83,9 +86,15 @@ export const WrapperSideText = styled.span`
   text-align: right;
   gap: 0.4rem;
   span {
+    cursor: pointer;
+  }
+  #blue {
     color: ${theme.defaultAppColor};
     font-size: 0.9rem;
-    cursor: pointer;
+  }
+  #grey {
+    color: ${theme.darkGreyColor};
+    font-size: 0.8rem;
   }
 `;
 
@@ -106,23 +115,23 @@ const Button = styled.button`
 `;
 
 export const DefaultButton = styled(Button)`
-  color: ${theme.defaultTextColor};
+  color: ${theme.defaultButtonTextColor};
   background: ${theme.defaultAppColor};
 `;
 
 export const UpgradeButton = styled(Button)`
-  color: ${theme.defaultTextColor};
+  color: ${theme.defaultButtonTextColor};
   background: ${theme.upgradeBgColor};
 `;
 
 export const FacebookButton = styled(Button)`
   text-transform: none;
-  color: ${theme.defaultTextColor};
+  color: ${theme.defaultButtonTextColor};
   background: ${theme.facebookBgColor};
 `;
 
 export const GoogleButton = styled(Button)`
   text-transform: none;
-  color: ${theme.defaultTextColor};
+  color: ${theme.defaultButtonTextColor};
   background: ${theme.googleBgColor};
 `;
