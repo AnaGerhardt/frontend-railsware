@@ -12,11 +12,11 @@ You may also see any lint errors in the console.
 
 ## Visiting the pages
 
-**Login**
+**Login**\
 Browse to [http://localhost:3000](http://localhost:3000).
 
-**Forgot Password**
+**Forgot Password**\
 Browse to [http://localhost:3000/forgot-password](http://localhost:3000/forgot-password).
 
-**Pro Account**
+**Pro Account**\
 Browse to [http://localhost:3000/pro-account](http://localhost:3000/pro-account).
