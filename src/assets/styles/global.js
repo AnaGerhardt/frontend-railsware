@@ -6,6 +6,7 @@ export const theme = {
   defaultTextColor: "#fff",
   defaultAppColor: "#1a4f8b",
   lightGreyColor: "lightgrey",
+  mediumGreyColor: "#aeaeae",
   darkGreyColor: "gray",
   upgradeBgColor: "#bf1541",
   facebookBgColor: "#385c8e",
@@ -29,7 +30,8 @@ h1,h2,h3,h4,h5,p,span {
   cursor: default;
 }
 input {
-  height: 2.5rem;
+  font-size: 0.95rem;
+  height: 2.8rem;
   width: 100%;
   padding: 0 1rem;
   border-radius: 5px;
@@ -42,7 +44,7 @@ input {
 }
 `;
 
-export const Layout = styled.div`
+export const WrapperIntroLayout = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,11 +89,15 @@ export const WrapperSideText = styled.span`
   }
 `;
 
+export const BottomText = styled.span`
+  color: ${theme.mediumGreyColor};
+`;
+
 const Button = styled.button`
   text-transform: uppercase;
   width: 100%;
   cursor: pointer;
-  padding: 0.7rem;
+  padding: 0.9rem;
   border-radius: 0.4rem;
   border: none;
   :hover {
